@@ -7,3 +7,8 @@ resource "azurerm_resource_group" "rg2" {
   name     = "vipin-rg2"
   location = "West Europe"
 }
+
+resource "azurerm_resource_group" "rg4" {
+  name     = "vipin-rg4"
+  location = "West Europe"
+}
