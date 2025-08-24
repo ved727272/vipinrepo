@@ -49,5 +49,5 @@ stages:
             inputs:
               provider: azurerm
               command: apply
-              environmentServiceNameAzureRM: briejshvipinsvc
+              environmentServiceNameAzureRM: brijeshvipinsvc
     
