@@ -6,3 +6,11 @@ on:
       - main
       - 'feature/**'
       
+jobs:
+  shekhchilli:
+    name: terraform initwa
+    runs-on: shekhchilli
+    steps: 
+      - name: terraform initwa1
+        run: echo shekhchilli
+        
