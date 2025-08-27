@@ -20,5 +20,7 @@ jobs:
         run: terraform init
       - name: terraform plan
         run: terraform plan
+      - name: Show Terraform Plan Output
+        run: terraform show plan.out
         
         
