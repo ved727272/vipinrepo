@@ -7,10 +7,18 @@ on:
       - 'feature/**'
       
 jobs:
-  shekhchilli:
-    name: terraform initwa
+  build: 
     runs-on: shekhchilli
     steps: 
-      - name: terraform initwa1
-        run: echo shekhchilli
+      - name: checkout code
+        uses: actions/checkout@v5
+      - name: HashiCorp - Setup Terraform
+        uses: hashicorp/setup-terraform@v2
+        with: 
+          terraform_version: latest
+      - name: terraform init
+        run: terraform init
+      - name: terraform plan
+        run: terraform plan
+        
         
