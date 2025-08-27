@@ -18,9 +18,10 @@ jobs:
           terraform_version: latest
       - name: terraform init
         run: terraform init
-      - name: terraform plan
-        run: terraform plan
+      - name: Terraform Plan
+        run: terraform plan -no-color -out=plan.out
+
       - name: Show Terraform Plan Output
-        run: terraform show plan.out
+        run: terraform show -no-color plan.out
         
         
